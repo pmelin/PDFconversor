@@ -24,8 +24,7 @@ public class Main {
 	private static File ORIGIN_DIR;
 	private static File DESTINATION_DIR;
 	private static BufferedReader br = null;
-	private static DateFormat SDF = new SimpleDateFormat("yyyy-MM-dd_HH:mm");
-
+	
 	/*
 	 * Creates a PDF file
 	 * 
@@ -98,6 +97,6 @@ public class Main {
 	}
 	
 	private static void log(String message){
-		System.out.println("CONVERSOR " + SDF.format(new Date()) + message);
+		System.out.println("CONVERSOR:: " + message);
 	}
 }
